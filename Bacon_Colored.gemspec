@@ -4,7 +4,7 @@ require "Bacon_Colored/version"
 
 Gem::Specification.new do |s|
   s.name        = "Bacon_Colored"
-  s.version     = BaconColored::VERSION
+  s.version     = Bacon_Colored::VERSION
   s.authors     = ["da99"]
   s.email       = ["i-hate-spam-45671204@mailinator.com"]
   s.homepage    = ""

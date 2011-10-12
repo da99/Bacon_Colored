@@ -1,4 +1,5 @@
-require File.expand_path('spec/spec_helper')
+require File.expand_path('spec/helper')
+require 'Bacon_Colored'
 
 describe "All true:" do
   

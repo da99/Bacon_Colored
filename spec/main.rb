@@ -12,12 +12,14 @@ describe "Bacon_Colored" do
   end
   
   it("prints green when tests pass.") {
+    target = "\e[32m✓ \e[0mpasses"
     result = @run.call("pass")
-    result["\e[32m✓ \e[0mpasses"].should.not.be == nil
+    result[ target ].should.be == target
   }
   
   it("prints red when tests fail.") {
-    @run.call("fail")["\e[31m✗ \e[0mfails\e[31m [FAILED]\e[0m"].should.not.be == nil
+    target = "\e[31m✗ \e[0mfails\e[31m [FAILED]\e[0m"
+    @run.call("fail")[ target ].should == target
   }
   
   it("prints green/red when tests pass/fail.") {
