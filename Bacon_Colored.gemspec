@@ -7,10 +7,10 @@ Gem::Specification.new do |s|
   s.authors     = ["da99"]
   s.email       = ["i-hate-spam-45671204@mailinator.com"]
   s.homepage    = "https://github.com/da99/Bacon_Colored"
-  s.summary     = %q{Adds color to your spec runs.}
+  s.summary     = %q{Adds color to your Bacon runs.}
   s.description = %q{
-    Adds color to your spec runs.
-    Inspired by GreenEggs: https://github.com/fantasticmf/greeneggs
+    require "bacon";
+    require "Bacon_Colored";
   }
 
   s.rubyforge_project = "Bacon_Colored"
