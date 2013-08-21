@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = Bacon_Colored::VERSION
   s.authors     = ["da99"]
   s.email       = ["i-hate-spam-45671204@mailinator.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/da99/Bacon_Colored"
   s.summary     = %q{Adds color to your spec runs.}
   s.description = %q{
     Adds color to your spec runs.
@@ -22,8 +22,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency 'rake'
-  
+
   s.add_runtime_dependency 'bacon'
   s.add_runtime_dependency 'colored'
-  
 end
