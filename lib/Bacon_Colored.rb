@@ -29,12 +29,15 @@ module Bacon
     def handle_summary
       specs, reqs, fails, errs = Counter.values_at(:specifications, :requirements, :failed, :errors)
       all_pass = reqs > 1 && (fails == errs) && (errs == 0)
+      single_pass = reqs == 1 && specs == 1 && (errs == 0) && (fails == errs)
 
       print ErrorLog  if Backtraces
 
       print "%d specifications (%d requirements)".send(all_pass ? :green : :to_s ) % [ specs, reqs ]
 
-      if all_pass
+      if single_pass
+        print( ". Just one requirement and it passes. ".green )
+      elsif  all_pass
         print( ". All pass. ".green )
       else
         print ", "
