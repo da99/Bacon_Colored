@@ -1,6 +1,5 @@
 # -*- encoding : utf-8 -*-
-# 
-require "Bacon_Colored/version"
+#
 
 unless defined?(Bacon)
   require 'bacon'
@@ -18,7 +17,7 @@ module Bacon
                 :red
               else
                 :yellow
-              end 
+              end
 
       mark = error.empty? ? "✓ ".green : "✗ ".send(color)
       print " #{mark}#{description}"
@@ -29,10 +28,10 @@ module Bacon
 
     def handle_summary
       specs, reqs, fails, errs = Counter.values_at(:specifications, :requirements, :failed, :errors)
-      all_pass = reqs > 1 && (fails == errs) && (errs == 0) 
+      all_pass = reqs > 1 && (fails == errs) && (errs == 0)
 
       print ErrorLog  if Backtraces
-      
+
       print "%d specifications (%d requirements)".send(all_pass ? :green : :to_s ) % [ specs, reqs ]
 
       if all_pass
@@ -44,10 +43,10 @@ module Bacon
         print "#{errs} errors".send( errs > 0 ? :yellow : :to_s )
         print ". "
       end
-      
-      puts 
+
       puts
-    end  
-    
+      puts
+    end
+
   end # === module
 end # === module

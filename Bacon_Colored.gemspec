@@ -1,10 +1,9 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "Bacon_Colored/version"
 
 Gem::Specification.new do |s|
   s.name        = "Bacon_Colored"
-  s.version     = Bacon_Colored::VERSION
+  s.version     = `cat VERSION`
   s.authors     = ["da99"]
   s.email       = ["i-hate-spam-45671204@mailinator.com"]
   s.homepage    = "https://github.com/da99/Bacon_Colored"
