@@ -1,7 +1,7 @@
 Bacon\_Colored
 ==================
 
-Inspired by GreenEggs: [https://github.com/f1337/greeneggs](greeneggs by f1337)
+Inspired by GreenEggs: [greeneggs by f1337](https://github.com/f1337/greeneggs)
 
 Use It:
 =====
