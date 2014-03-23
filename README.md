@@ -11,7 +11,6 @@ gem install Bacon_Colored
 ```
 
 ```rb
-require "bacon"
 require "Bacon_Colored"
 
 describe ....
@@ -19,6 +18,16 @@ describe ....
 end
 
 ```
+
+Note:
+=====
+
+  If you use the `bacon -r` option, it won't work. I still don't know why. Examples:
+  
+  ```rb
+    bacon -rBacon_Colored               my_test_file.rb
+    bacon -rtests/helpers/my_helpers.rb my_test_file.rb
+  ```
 
 Alternatives:
 ======
