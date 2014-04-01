@@ -22,8 +22,10 @@ end
 Note:
 =====
 
-  If you use the `bacon -r` option, it won't work. I still don't know why. Examples:
-  
+  You will need `bacon > 1.0`.
+
+  Also, if you use the `bacon -r` option, it won't work. I still don't know why. Examples:
+
   ```rb
     bacon -rBacon_Colored               my_test_file.rb
     bacon -rtests/helpers/my_helpers.rb my_test_file.rb
